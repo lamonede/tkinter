@@ -21,9 +21,9 @@ menubar = Menu(root)
 menu_1 = Menu(menubar, tearoff=0)
 menu_1.add_command(label="하위 메뉴 1-1")
 menu_1.add_command(label="하위 메뉴 1-2")
-# menu_1.add_separator()
-menu_1.add_command(label="하위 메뉴 1-3", command=close)
-menubar.add_cascade(label="상위 메뉴 1", menu=menu_1)
+menu_1.add_separator()
+menu_1.add_command(label="종료", command=close)
+menubar.add_cascade(label="메뉴", menu=menu_1)
 
 root.config(menu=menubar)
 
